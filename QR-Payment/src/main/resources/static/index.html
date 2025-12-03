@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>QR Payment Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1 class="title">🍽️ Our Food Menu</h1>
+
+  <!-- Product Grid -->
+  <div id="products" class="grid"></div>
+</div>
+
+<!-- QR Modal -->
+<div id="qrModal" class="modal">
+  <div class="modal-content">
+    <span id="closeBtn" class="close">×</span>
+
+    <h3 id="modalTitle"></h3>
+
+    <!-- Product Image -->
+    <img id="qrImage" src="" style="width:200px; margin-bottom:15px;">
+
+    <!-- UPI Text -->
+    <p id="upiText"></p>
+
+    <!-- Payment Button -->
+    <button id="simulateBtn">Simulate Payment (Mark SUCCESS)</button>
+  </div>
+</div>
+
+<!-- JS File -->
+<script src="script.js"></script>
+
+</body>
+</html>

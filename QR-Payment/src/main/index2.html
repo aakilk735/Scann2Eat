@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="title">🍔 Our Delicious Products</h1>
+
+    <div class="container">
+        <div class="grid">
+
+            <div class="card" onclick="openModal('Burger', '20', 'images/burger.png')">
+                <img src="images/burger.png">
+                <h4>Burger</h4>
+                <p>₹ 20</p>
+            </div>
+
+            <div class="card" onclick="openModal('Pizza', '35', 'images/pizza.png')">
+                <img src="images/pizza.png">
+                <h4>Pizza</h4>
+                <p>₹ 35</p>
+            </div>
+
+            <div class="card" onclick="openModal('Hot Dog', '25', 'images/hotdog.png')">
+                <img src="images/hotdog.png">
+                <h4>Hot Dog</h4>
+                <p>₹ 25</p>
+            </div>
+
+            <div class="card" onclick="openModal('Sandwich', '45', 'images/sandwich.png')">
+                <img src="images/sandwich.png">
+                <h4>Sandwich</h4>
+                <p>₹ 45</p>
+            </div>
+
+            <div class="card" onclick="openModal('Donut', '30', 'images/donut.png')">
+                <img src="images/donut.png">
+                <h4>Donut</h4>
+                <p>₹ 30</p>
+            </div>
+
+            <div class="card" onclick="openModal('Cake', '100', 'images/cake.png')">
+                <img src="images/cake.png">
+                <h4>Cake</h4>
+                <p>₹ 100</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <img id="modalImage" style="width:200px;">
+            <h2 id="modalName"></h2>
+            <p id="modalPrice"></p>
+            <button id="simulateBtn">Generate QR</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
